@@ -1,26 +1,36 @@
 import React from "react";
 
-export default function Content() {
+export default function Content(props) {
   return (
-    <div>
-      <div className="card" style={{width: '18rem'}}>
-        <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <h6 className="card-subtitle mb-2 text-body-secondary">
-            Card subtitle
-          </h6>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="/" className="card-link">
-            Card link
-          </a>
-          <a href="/" className="card-link">
-            Another link
-          </a>
-        </div>
-      </div>
-    </div>
+    <>
+      <h1>Content</h1>
+    </>
   );
 }
+
+{/* <div
+        id="quote-box"
+        style={{
+          borderRadius: 3,
+          position: "relative",
+          width: 450,
+          padding: "40px 50px",
+          display: "table",
+          backgroundColor: "#fff",
+        }}
+      >
+        <div>
+          <h5 id="text">
+            Card title
+          </h5>
+          <p id="author">
+            -- author
+          </p>
+          <button id="new-quote" href="/">
+            Card link
+          </button>
+          <a style={{ color: "black" }} id="tweet-quote" href="/">
+            <i class="fa-brands fa-square-twitter fa-2xl"></i>
+          </a>
+        </div>
+      </div> */}
