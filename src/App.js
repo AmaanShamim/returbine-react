@@ -6,6 +6,14 @@ import Navbar from './Components/Navbar';
 function App() {
   const [mode, setmode] = useState("light"); // Whether dark mode is enabled or not.
   
+  fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  });
+
   // Generates a random light color
   function getRandomLightColor() {
     const red = Math.floor(Math.random() * (255 - 128 + 1)) + 128;

@@ -13,7 +13,7 @@ export default function Content(props) {
           <div
             style={{
               color: "black",
-              backgroundColor: "white",
+              backgroundColor: "#ffffffcf",
               margin: "0px 40px",
               padding: "50px",
               borderRadius: "3px",
@@ -53,7 +53,7 @@ export default function Content(props) {
                   padding: "10px",
                 }}
               >
-                <i class="fa fa-twitter fa-2xl" style={{ color: "#fff" }}></i>
+                <i className="fa fa-twitter fa-2xl" style={{ color: "#fff" }}></i>
               </a>
               <button
                 id="new-quote"
@@ -99,7 +99,7 @@ export default function Content(props) {
             Card link
           </button>
           <a style={{ color: "black" }} id="tweet-quote" href="/">
-            <i class="fa-brands fa-square-twitter fa-2xl"></i>
+            <i className="fa-brands fa-square-twitter fa-2xl"></i>
           </a>
         </div>
       </div> */

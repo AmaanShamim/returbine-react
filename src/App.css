@@ -7,3 +7,7 @@
   font-family: "Satisfy-Regular";
   src: url("../src/Fonts/Satisfy-Regular.ttf") format("truetype");
 }
+
+body{
+  background-color: rgb(184, 194, 249)
+}

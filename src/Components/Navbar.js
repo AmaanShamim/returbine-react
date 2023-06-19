@@ -14,7 +14,7 @@ export default function Navbar(props) {
         <div className="mx-2">
           {props.mode==='dark' && <i style={{
             cursor: 'pointer'
-          }} onClick={props.toggleMode} class="fa-solid fa-sun fa-2xl"></i>}
+          }} onClick={props.toggleMode} className="fa-solid fa-sun fa-2xl"></i>}
           {props.mode==='light' && <i style={{
             cursor: 'pointer'
           }} onClick={props.toggleMode} className="fa-solid fa-moon fa-2xl"></i>}
