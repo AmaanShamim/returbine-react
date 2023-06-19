@@ -1,4 +1,9 @@
 @font-face {
-    font-family: 'MontserratAlt1-ExtraBold';
-    src: url('../src/Fonts/MontserratAlt1-ExtraBold.ttf') format('truetype'); 
-  }
+  font-family: "MontserratAlt1-ExtraBold";
+  src: url("../src/Fonts/MontserratAlt1-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Satisfy-Regular";
+  src: url("../src/Fonts/Satisfy-Regular.ttf") format("truetype");
+}
