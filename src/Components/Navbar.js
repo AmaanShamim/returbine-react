@@ -3,7 +3,9 @@ import React from "react";
 export default function Navbar(props) {
   return (
     <div>
-      <div className="d-flex justify-content-between m-4">
+      <div className="d-flex justify-content-between m-4" style={{
+        alignItems: "center"
+      }}>
         <h1
           style={{
             fontFamily: "MontserratAlt1-ExtraBold",

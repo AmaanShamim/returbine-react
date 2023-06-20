@@ -5,7 +5,8 @@ import Navbar from './Components/Navbar';
 
 function App() {
   const [mode, setmode] = useState("light"); // Whether dark mode is enabled or not.
-  
+  const [data, setdata] = useState('Initial State') // Rendering new Quote.
+
   fetch("https://type.fit/api/quotes")
   .then(function(response) {
     return response.json();
@@ -38,6 +39,19 @@ function App() {
     return hex;
   }
 
+  const changeQuote = () => {
+    if (mode === "dark") {
+      document.body.style.backgroundColor = getRandomDarkColor();
+    } else {
+      document.body.style.backgroundColor = getRandomLightColor();
+    }
+    if (data === "Initial state") {
+      setdata("refresh")
+    } else {
+      setdata("Initial state")
+    } 
+  };
+
   const toggleMode = () => {
     if (mode === "light") {
       setmode("dark");
@@ -53,7 +67,7 @@ function App() {
   return (
     <div>
       <Navbar toggleMode={toggleMode} mode={mode} />
-      <Content />
+      <Content changeQuote={changeQuote}/>
     </div>
   );
 }
