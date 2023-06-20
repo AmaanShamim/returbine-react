@@ -25,10 +25,10 @@ function App() {
   }
 
   function getRandomDarkColor() {
-    // Generate random RGB values in the range [0, 32]
-    const red = Math.floor(Math.random() * 32);
-    const green = Math.floor(Math.random() * 32);
-    const blue = Math.floor(Math.random() * 32);
+    // Generate a random dark color
+    const red = Math.floor(Math.random() * 64);
+    const green = Math.floor(Math.random() * 64);
+    const blue = Math.floor(Math.random() * 64);
     const color = `#${rgbToHex(red)}${rgbToHex(green)}${rgbToHex(blue)}`;
     return color;
   }
@@ -67,7 +67,7 @@ function App() {
   return (
     <div>
       <Navbar toggleMode={toggleMode} mode={mode} />
-      <Content changeQuote={changeQuote}/>
+      <Content changeQuote={changeQuote} mode={mode} getRandomDarkColor={getRandomDarkColor} getRandomLightColor={getRandomLightColor} />
     </div>
   );
 }

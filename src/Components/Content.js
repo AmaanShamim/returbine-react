@@ -16,7 +16,7 @@ export default function Content(props) {
       console.error("Error fetching data:", error);
     }
   };
-
+  
   const randomIndex = Math.floor(Math.random() * 1643);
 
   return (
@@ -25,6 +25,7 @@ export default function Content(props) {
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
             height: "75vh",
@@ -43,12 +44,12 @@ export default function Content(props) {
             >
               <>
                 <h1
+                  id="text"
                   style={{
                     fontSize: "25px",
                     fontFamily: "Satisfy-Regular",
                     textAlign: "center",
                   }}
-                  id="text"
                 >
                   {data[randomIndex].text}
                 </h1>
@@ -64,7 +65,7 @@ export default function Content(props) {
                   -{" "}
                   {data[randomIndex].author
                     ? data[randomIndex].author
-                    : "author"}
+                    : "Unknown"}
                 </p>
               </>
               <div
@@ -75,7 +76,8 @@ export default function Content(props) {
               >
                 <a
                   id="tweet-quote"
-                  href="twitter.com/intent/tweet"
+                  href={'https://twitter.com/intent/tweet?text=' + data[randomIndex].text + '" ' + data[randomIndex].author}
+                  target="_black"
                   style={{
                     borderRadius: "3px",
                     backgroundColor: "black",
@@ -104,6 +106,10 @@ export default function Content(props) {
               </div>
             </div>
           </div>
+          <p style={{
+            paddingTop: "20px",
+            fontFamily: 'Satisfy-Regular'
+          }}>- by Amaan Shamim Khan</p>
         </div>
       ) : (
         <div style={{
