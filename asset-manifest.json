@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/wishdomWondering-react/static/css/main.e74fb6cf.css",
+    "main.js": "/wishdomWondering-react/static/js/main.b3fe494f.js",
+    "static/js/787.58084fab.chunk.js": "/wishdomWondering-react/static/js/787.58084fab.chunk.js",
+    "static/media/MontserratAlt1-ExtraBold.ttf": "/wishdomWondering-react/static/media/MontserratAlt1-ExtraBold.6d2658c12938b2ff6eb8.ttf",
+    "static/media/Satisfy-Regular.ttf": "/wishdomWondering-react/static/media/Satisfy-Regular.32a6713537cf5e1e82f2.ttf",
+    "index.html": "/wishdomWondering-react/index.html",
+    "main.e74fb6cf.css.map": "/wishdomWondering-react/static/css/main.e74fb6cf.css.map",
+    "main.b3fe494f.js.map": "/wishdomWondering-react/static/js/main.b3fe494f.js.map",
+    "787.58084fab.chunk.js.map": "/wishdomWondering-react/static/js/787.58084fab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e74fb6cf.css",
+    "static/js/main.b3fe494f.js"
+  ]
+}
